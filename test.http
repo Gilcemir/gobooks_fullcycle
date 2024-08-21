@@ -1,0 +1,33 @@
+### Get a books
+Get http://localhost:8080/books
+Accept: application/json
+
+
+### Post a new book
+Post http://localhost:8080/books
+Content-Type:  application/json
+
+{
+  "title": "The idiot",
+  "author": "Fyodor Dostoevsky",
+  "genre" : "Novel"
+}
+
+### Search by id
+Get http://localhost:8080/books/1
+Accept: application/json
+
+### Search by Name
+Get http://localhost:8080/books/search?name=The
+Accept: application/json
+
+
+### Simulate multiple readins
+POST http://localhost:8080/books/simulate
+Content-Type:  application/json
+
+ [
+    "1",
+    "2",
+    "3"
+]
