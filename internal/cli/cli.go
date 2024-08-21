@@ -73,7 +73,7 @@ func (cli *BookCLI) searchBooks(bookName string) {
 		return
 	}
 
-	fmt.Println("%d books found:\n", len(books))
+	fmt.Println(len(books), "books found:")
 	for _, book := range books {
 		fmt.Printf("ID: %d, Title: %s, Author: %s, Genre: %s\n", book.ID, book.Title, book.Author, book.Genre)
 	}
